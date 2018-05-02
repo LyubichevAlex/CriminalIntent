@@ -41,7 +41,7 @@ public class CrimeFragment extends Fragment {
 		mTitleField.addTextChangedListener(new TextWatcher() {
 			@Override
 			public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-				//Log.d(TAG, String.format("s=%s, start=%d, count=%d, after=%d", s.toString(), start, count, after));
+				Log.d(TAG, String.format("s=%s, start=%d, count=%d, after=%d", s.toString(), start, count, after));
 			}
 
 			@Override
@@ -55,7 +55,7 @@ public class CrimeFragment extends Fragment {
 			}
 		});
 
-		mDateButton = v.findViewById(R.id.crime_date;
+		mDateButton = v.findViewById(R.id.crime_date);
 		mDateButton.setText(mCrime.getDate().toString());
 		mDateButton.setEnabled(false);
 
