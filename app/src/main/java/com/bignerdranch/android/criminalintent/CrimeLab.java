@@ -4,7 +4,6 @@ import android.content.Context;
 import android.support.annotation.Nullable;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
 
@@ -21,7 +20,7 @@ public class CrimeLab {
     }
 
     private CrimeLab(Context context) {
-        mCrimes = new LinkedList<>();
+        mCrimes = new ArrayList<>();
         // test data
         for (int i = 0; i < 100; ++i) {
             Crime crime = new Crime();
